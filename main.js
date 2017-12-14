@@ -418,22 +418,16 @@ data = {
 var searchResults = [];
 var searchString;
 $(document).ready(function() {
-    /*
-    $('.container').on('click', '.collapsible-header', changeCSS);
+
+    //$('.container').on('click', '.collapsible-header', changeCSS);
 
     function changeCSS() {
         $(this).parent().siblings().find('.collapsible-header').toggleClass('notVis');
     }
-    */
 
     var main = $(".maincont");
 
     populateDataStructure(data, main);
-
-    $('.collapsible').collapsible({
-        onOpen: function(el) {console.log(el);}, // Callback for Collapsible open
-        onClose: function(el) { } // Callback for Collapsible close
-    });
 
     setInterval(function() {
         var ss = $("#searchString").val()
