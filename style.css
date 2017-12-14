@@ -1,11 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 html{ width:100%; height:100%;
       background:#5B96DE url(background.jpg) center center no-repeat;
       background-attachment: fixed;
       background-size:cover;
-
+}
+body {
+    font-family: 'Roboto', sans-serif;
 }
 header {
-    min-height: 100px;
+    min-height: 5rem;
+    padding: 2em;
+    padding-left: 5em;
+    text-align: left;
+
 }
 
 .subCat {
